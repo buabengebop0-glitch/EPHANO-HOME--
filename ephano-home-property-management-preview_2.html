@@ -1430,7 +1430,11 @@ const EPHANO_CONFIG = {
   function digitsOnly(str) { return (str || "").replace(/\D/g, ""); }
 
   function applyConfig() {
-    var cfg = window.EPHANO_CONFIG || {};
+    var cfg = window.EPHANO_CONFIG || {
+         phone: "0599669296",
+  whatsapp: "233599669296",
+  email: "ephanohomepropertymanagement@gmail.com",
+       }
 
     setText(".cfg-phone-display", cfg.phoneDisplay || cfg.phone || "");
     setText(".cfg-whatsapp-display", cfg.whatsappDisplay || cfg.phoneDisplay || cfg.phone || "");
